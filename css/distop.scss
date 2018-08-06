@@ -1,0 +1,75 @@
+/* 面包屑导航 */
+
+.subnav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    padding-left: 6px;
+    border-bottom: 1px solid #ccc;
+    a {
+        display: inline;
+    }
+}
+
+/* 十大品牌部分 */
+
+.model {
+    .model_title {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        >h3 {
+            font-size: 14px;
+            line-height: 36px;
+            padding-left: 10px;
+            color: #874604;
+        }
+    }
+    .model_content {
+        ul li {
+            padding: 10px;
+            border-bottom: 1px solid #e7e7e7;
+            >a {
+                position: relative;
+                em {
+                    position: absolute;
+                    right: 0px;
+                    top: 10px;
+                    font-size: 22px;
+                    color: #999;
+                }
+                span {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-align: center;
+                    margin-right: 10px;
+                    vertical-align: top;
+                }
+                .inner {
+                    display: inline-block;
+                    .tit {
+                        color: #000;
+                    }
+                }
+                p {
+                    margin-top: 3px;
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+        }
+        .top1 {
+            background-color: #f10e0e;
+        }
+        .top2 {
+            background-color: #ff9314;
+        }
+        .top3 {
+            background-color: #8adf5b;
+        }
+    }
+}

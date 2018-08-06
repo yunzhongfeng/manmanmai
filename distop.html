@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 理想视口标准写法 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买--移动版(比价,淘好货)</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/distop.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+</head>
+
+<body>
+    <a href="javascript:;" name="top"></a>
+    <!-- 头部 -->
+    <div class="ct100_header1 clearfix">
+        <div class="logo fl">
+            <a href="javascript:;">
+                <img src="https://img.alicdn.com/imgextra/i1/690311/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt="">
+            </a>
+        </div>
+        <div class="appdown fr">
+            <a href="http://m.manmanbuy.com/app.html?type=headword&value=wap">
+                <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="手机APP下载">
+            </a>
+        </div>
+    </div>
+    <!-- 搜索框 -->
+    <form action="./search.html" method="get" name="form" id="search-form">
+        <div class="search pr">
+            <div class="search_text">
+                <span></span>
+                <input type="search" placeholder="请输入要比价的商品">
+            </div>
+            <div class="search_btn">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </form>
+    <!-- 面包屑导航 -->
+    <div class="subnav">
+        <a href="javascript:;">首页</a>
+        &gt;
+        <a href="javascript:;">品牌大全</a>
+        &gt;正装裤哪个牌子好
+    </div>
+    <!-- 十大品牌部分开始 -->
+    <div class="model">
+        <div class="model_title">
+            <h3>护腰带哪个牌子好</h3>
+        </div>
+        <div class="model_content">
+            <ul>
+                <li>
+                    <a href="javascript:;" title="小米护腰带">
+                        <em class="iconfont icon-xiangyou1 con-ico"></em>
+                        <span class="top1">1</span>
+                        <div class="inner">
+                            <div class="tit">小米护腰带</div>
+                            <p>30天全网销量：339342件</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <!-- 返回顶部按钮 -->
+        <a href="#top" class="goTop iconfont icon-dingbu" id="goTop"></a>
+        <div class="footer_login">
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;">注册</a>
+            <a href="#top">返回顶部</a>
+        </div>
+        <div class="footer_info">
+            <p>
+                <a href="javascript:;" class="red">手机APP下载</a>
+                <a href="javascript:;">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+        <div class="app-promotion-bar">
+            <a href="javascript:;" class="closefix iconfont icon-guanbi2"></a>
+            <span class="icon"></span>
+            <p class="titlefix">慢慢买</p>
+            <p class="describe">全网比价,查历史价格</p>
+            <a href="javascript:;" class="download-btn">立即打开</a>
+        </div>
+    </footer>
+</body>
+<script type="text/template" id="tmpl">
+    {{each result value}}
+    <div class="cont_t">
+        <a href="./distop.html?id={{value.brandTitleId}}">{{value.brandTitle}}</a>
+    </div>
+    {{/each}}
+</script>
+<script src="./js/jquery.min.js"></script>
+<script src="./lib/art-template/template-web.js"></script>
+<script src="./lib/itcast_plg.js"></script>
+<script src="./js/public.js"></script>
+<script src="./js/distop.js"></script>
+
+</html>

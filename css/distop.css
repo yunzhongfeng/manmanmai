@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* 面包屑导航 */
+.subnav {
+  height: 30px;
+  line-height: 30px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  padding-left: 6px;
+  border-bottom: 1px solid #ccc;
+}
+
+.subnav a {
+  display: inline;
+}
+
+/* 十大品牌部分 */
+.model .model_title {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.model .model_title > h3 {
+  font-size: 14px;
+  line-height: 36px;
+  padding-left: 10px;
+  color: #874604;
+}
+
+.model .model_content ul li {
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.model .model_content ul li > a {
+  position: relative;
+}
+
+.model .model_content ul li > a em {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  font-size: 22px;
+  color: #999;
+}
+
+.model .model_content ul li > a span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.model .model_content ul li > a .inner {
+  display: inline-block;
+}
+
+.model .model_content ul li > a .inner .tit {
+  color: #000;
+}
+
+.model .model_content ul li > a p {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+
+.model .model_content .top1 {
+  background-color: #f10e0e;
+}
+
+.model .model_content .top2 {
+  background-color: #ff9314;
+}
+
+.model .model_content .top3 {
+  background-color: #8adf5b;
+}
+/*# sourceMappingURL=distop.css.map */

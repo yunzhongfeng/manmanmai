@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* 头部和底部公共样式 */
+/* ct100_header1部分 */
+.ct100_header1 {
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#fc4a1a), to(#f7b733));
+  background: linear-gradient(to right, #fc4a1a 0%, #f7b733 100%);
+}
+
+.ct100_header1 .logo {
+  padding: 12px;
+  width: 75%;
+  margin-left: 6px;
+}
+
+.ct100_header1 .logo a img {
+  max-width: 185px;
+  max-height: 25px;
+  overflow: hidden;
+}
+
+.ct100_header1 .appdown {
+  padding: 7px;
+}
+
+.ct100_header1 .appdown img {
+  max-height: 34px;
+  max-width: 34px;
+  overflow: hidden;
+}
+
+/* 搜索框 */
+#search-form {
+  width: 100%;
+  height: 100%;
+}
+
+#search-form .search {
+  background: -webkit-gradient(linear, left top, right top, from(#fc4a1a), to(#f7b733));
+  background: linear-gradient(to right, #fc4a1a 0%, #f7b733 100%);
+  padding: 10px;
+}
+
+#search-form .search .search_text span {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 14px;
+  height: 14px;
+  background: url("../uplode/jd-sprites.png") no-repeat -84px 0px;
+  background-size: 200px 200px;
+}
+
+#search-form .search .search_text > input {
+  padding-left: 10%;
+  height: 30px;
+  width: 80%;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+#search-form .search .search_btn > input {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #3385ff;
+}
+
+/* 底部 */
+footer .goTop {
+    position: fixed;
+    right: 9px;
+    bottom: 30%;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 20;
+    border: 1px solid #999;
+    display: none;
+  }
+  
+  footer .footer_login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  footer .footer_login a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 2px solid #fff;
+    padding: 10px 0;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(#fc4a1a), to(#f7b733));
+    background: linear-gradient(to right, #fc4a1a 0%, #f7b733 100%);
+  }
+  
+  footer .footer_login a:last-child {
+    background: -webkit-gradient(linear, right top, left top, from(#fc4a1a), color-stop(10%, #fc4a1a), to(#f7b733));
+    background: linear-gradient(to left, #fc4a1a, #fc4a1a 10%, #f7b733 100%);
+    border-right: none;
+  }
+  
+  footer .footer_info {
+    color: #5a5a5a;
+    font-size: 12px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #efefef;
+  }
+  
+  footer .footer_info a {
+    display: inline;
+  }
+  
+  footer .app-promotion-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 4;
+    background-color: #faf8f5;
+    -webkit-transition: opacity 2s ease-out;
+    transition: opacity 2s ease-out;
+  }
+  
+  footer .app-promotion-bar .closefix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 52px;
+    font-size: 22px;
+    padding: 18px 10px 20px;
+    color: #999;
+  }
+  
+  footer .app-promotion-bar .icon {
+    position: absolute;
+    top: 10px;
+    left: 46px;
+    width: 41px;
+    height: 41px;
+    background: url("../images/TB2m.jpg") no-repeat center;
+    background-size: 41px;
+  }
+  
+  footer .app-promotion-bar .titlefix {
+    margin: 12px 84px 0 97px;
+    color: #888;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  footer .app-promotion-bar .describe {
+    margin: 3px 84px 0 97px;
+    color: #999;
+    font-size: 14px;
+    line-height: 1;
+  }
+  
+  footer .app-promotion-bar .download-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 74px;
+    height: 32px;
+    padding-top: 10px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    background-color: #ff7700;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 -2px #ff5500;
+            box-shadow: inset 0 -2px #ff5500;
+  }

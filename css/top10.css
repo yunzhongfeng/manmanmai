@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* 面包屑导航 */
+.subnav {
+  height: 30px;
+  line-height: 30px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  padding-left: 6px;
+  border-bottom: 1px solid #ccc;
+}
+
+.subnav a {
+  display: inline;
+}
+
+/* 品牌大全标题部分 */
+.view .view_title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #874604;
+  margin: 10px 5px;
+  padding-left: 6px;
+  border: 1px solid #ccc;
+}
+
+.view .view_content .cont_t a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 4px;
+  color: #000;
+  background: url("http://www.zuyushop.com/wap/images/arrow1.gif") no-repeat right center;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 底部 */
+/*# sourceMappingURL=top10.css.map */
