@@ -46,25 +46,46 @@
         <a href="javascript:;">首页</a>
         &gt;
         <a href="javascript:;">品牌大全</a>
-        &gt;正装裤哪个牌子好
+        &gt;
+        <span>正装裤哪个牌子好</span>
     </div>
     <!-- 十大品牌部分开始 -->
     <div class="model">
         <div class="model_title">
-            <h3>护腰带哪个牌子好</h3>
+            <h3></h3>
         </div>
         <div class="model_content">
             <ul>
-                <li>
-                    <a href="javascript:;" title="小米护腰带">
-                        <em class="iconfont icon-xiangyou1 con-ico"></em>
-                        <span class="top1">1</span>
-                        <div class="inner">
-                            <div class="tit">小米护腰带</div>
-                            <p>30天全网销量：339342件</p>
-                        </div>
-                    </a>
-                </li>
+                <!-- 模板引擎 -->
+            </ul>
+        </div>
+    </div>
+    <!-- 产品销量排行 -->
+    <div class="Product_sales">
+        <div class="Product_title">
+            <h3></h3>
+        </div>
+        <div class="Product_content">
+            <ul>
+                <!-- 模板引擎 -->
+            </ul>
+        </div>
+    </div>
+    <!-- 用户评论 -->
+    <div class="Product_sales hot_product">
+        <div class="Product_title hot_title">
+            <h3></h3>
+        </div>
+        <div class="hot_list">
+            <a href="javascript:;">
+                <div class="protit clearfix">
+                    <div class="pic fl">
+                    </div>
+                    <div class="tit">大金(DAIKIN) FTXB336TCLW 小鑫系列 大1.5匹 冷暖变频 壁挂式空调</div>
+                </div>
+            </a>
+            <ul>
+                <!-- 模板引擎 -->
             </ul>
         </div>
     </div>
@@ -96,9 +117,57 @@
 </body>
 <script type="text/template" id="tmpl">
     {{each result value}}
-    <div class="cont_t">
-        <a href="./distop.html?id={{value.brandTitleId}}">{{value.brandTitle}}</a>
-    </div>
+    <li>
+        <a href="javascript:;" title="{{value.brandName}}">
+            <em class="iconfont icon-xiangyou1 con-ico"></em>
+            <span>{{$index+1}}</span>
+            <div class="inner">
+                <div class="tit">{{value.brandName}}</div>
+                <p>{{value.brandInfo}}</p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+
+
+</script>
+<script type="text/tmpl" id="tp">
+    {{each data value}}
+    <li>
+        <a href="./bijia.html?productId={{value.productId}}">
+            <div class="pic">
+                {{@value.productImg}}
+            </div>
+            <div class="info">
+                <div class="tit">{{value.productName}}</div>
+                <div class="price clearfix">
+                    <em>{{value.productPrice}}</em>
+                    <span class="star">
+                        <i class="star5"></i>
+                    </span>
+                </div>
+                <div class="other">
+                    <em>{{value.productQuote}}</em>
+                    <em>全网{{value.productCom}}</em>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}} {{each res value index}}
+    <li>
+        <div class="plbox">
+            <a href="javascript:;">
+                <div class="name clearfix">
+                    {{value.comName}}：
+                    <span class="star">
+                        <em class="star5"></em>
+                    </span>
+                    <i class="fr">{{value.comTime}}</i>
+                </div>
+                <div class="con">{{value.comContent}}</div>
+            </a>
+        </div>
+    </li>
     {{/each}}
 </script>
 <script src="./js/jquery.min.js"></script>
